@@ -23,6 +23,7 @@ All datasets we used are from [Rocky Mountain National Park Open Data](https://r
 |[Trailheads](https://romo-nps.opendata.arcgis.com/datasets/rocky-mountain-national-park-trailheads-pt/explore?location=40.324522%2C-105.679883%2C11.92&showTable=true)|55 Points|
 |[Picnic Areas](https://romo-nps.opendata.arcgis.com/datasets/nps::rocky-mountain-national-park-picnic-areas/explore?location=40.260344%2C-105.610513%2C10.78)|17 Points|
 |[Park Roads](https://romo-nps.opendata.arcgis.com/datasets/rocky-mountain-national-park-park-roads/explore?location=40.342530%2C-105.698910%2C11.75)|128 Lines|
+|[Parking Lots](https://romo-nps.opendata.arcgis.com/datasets/nps::rocky-mountain-national-park-parking-lots/explore?location=40.266407%2C-105.835272%2C16.59)|133 Polygons|
 |[Shuttle Routes](https://romo-nps.opendata.arcgis.com/datasets/rocky-mountain-national-park-shuttle-routes/explore?location=40.343616%2C-105.580170%2C13.70)|6 Lines|
 |[Shuttle Stop](https://romo-nps.opendata.arcgis.com/datasets/rocky-mountain-national-park-shuttlestop-pt/explore?location=40.344708%2C-105.580136%2C13.75)|13 Points|
 ## Wireframes
