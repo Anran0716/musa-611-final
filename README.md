@@ -26,6 +26,7 @@ All datasets we used are from [Rocky Mountain National Park Open Data](https://r
 |[Parking Lots](https://romo-nps.opendata.arcgis.com/datasets/nps::rocky-mountain-national-park-parking-lots/explore?location=40.266407%2C-105.835272%2C16.59)|133 Polygons|
 |[Shuttle Routes](https://romo-nps.opendata.arcgis.com/datasets/rocky-mountain-national-park-shuttle-routes/explore?location=40.343616%2C-105.580170%2C13.70)|6 Lines|
 |[Shuttle Stop](https://romo-nps.opendata.arcgis.com/datasets/rocky-mountain-national-park-shuttlestop-pt/explore?location=40.344708%2C-105.580136%2C13.75)|13 Points|
+Entrance Information: https://www.mycoloradoparks.com/park/faqs/rmnp-entrances/
 ## Wireframes
 ![Rocky Mountain Map](https://user-images.githubusercontent.com/90070226/161394482-a9536561-3efc-47e4-affa-5762707d6939.jpg)
 ![Rocky Mountain Map2](https://user-images.githubusercontent.com/90070226/161394494-b4e55853-f2e9-4d68-9946-7e6b45ae8f90.jpg)
