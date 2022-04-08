@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "Entrance",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Beaver Meadows Entrance", "description": null }, "geometry": { "type": "Point", "coordinates": [ -105.5811699, 40.3666149 ] } },
+{ "type": "Feature", "properties": { "Name": "Fall River Entrance", "description": null }, "geometry": { "type": "Point", "coordinates": [ -105.5919225, 40.4043624 ] } },
+{ "type": "Feature", "properties": { "Name": "Wild Basin Entrance", "description": null }, "geometry": { "type": "Point", "coordinates": [ -105.5664208, 40.2085572 ] } },
+{ "type": "Feature", "properties": { "Name": "Grand Lake Entrance", "description": null }, "geometry": { "type": "Point", "coordinates": [ -105.8259761, 40.2474649 ] } }
+]
+}
