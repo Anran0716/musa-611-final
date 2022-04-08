@@ -243,8 +243,8 @@ var geojsonMarkerOptions = {
 };
 
 var geojsonPolyOptions = {
-  weight: 2,
-  color: "#fcd483",
+  weight: 5,
+  color: "#f7945e",
   fillOpacity: 0
 };
 
@@ -259,12 +259,31 @@ var layer = L.geoJSON(campsites,{ pointToLayer: function (feature, latlng) {
     direction: "right",
 }).addTo(map);
 
-L.geoJson(camping_zone, { style: geojsonPolyOptions}).bindTooltip(layer => `<b>Trails</b>
-<br><b>Trail name</b>:  ${layer.feature.properties.TRLNAME}</br>
-<br><b>Suitable for</b>:  ${layer.feature.properties.TRLUSE}</br>
-<br><b>Trail type</b>:  ${layer.feature.properties.TRLTYPE}</br>
-<br><b>Trail class</b>:  ${layer.feature.properties.TRLCLASS}</br>`,
+// highlight function
+var highlightFeature = function(e){
+  var layer = e.target;
+  layer.setStyle({
+    weight:5,
+    color:"#f03b20",
+    dashArray: '',
+    fillOpacity:1
+  });
+}
+
+var layer1 =L.geoJson(camping_zone, { style: geojsonPolyOptions}).bindTooltip(layer => `<b>Trails</b>
+<br><b>Camp zone name</b>:  ${layer.feature.properties.NAME}</br>
+<br><b>Area</b>:  ${layer.feature.properties.SHAPE_Area}</br>`,
   {permanent: false,
     offset: [-50, -60],
     direction: "right",
 }).addTo(map);
+
+var highlightFeature1 = function(e){
+  var layer1 = e.target;
+  layer.setStyle({
+    weight:5,
+    color:"#f03b20",
+    dashArray: '',
+    fillOpacity:1
+  });
+}
