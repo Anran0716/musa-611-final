@@ -19,13 +19,11 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 // import Recreation Assets data
 
-fetch("rawdata/Boundary_Line.geojson")
-.then(function(response) {
-return response.json();
-})
-.then(function(data) {
-L.geoJSON(data).addTo(map);
-});
+
+
+
+
+//L.geoJson(Boundary_Line)
 
 
 var dataset="https://gist.githubusercontent.com/XintianLi/01972fc74f62309f7aef678d725d5e8a/raw/eb1c37279f47fb4b073d110469603ff7eff7bcf9/Philly_RecreationAssets.geojson"
