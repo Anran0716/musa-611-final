@@ -20,7 +20,7 @@ const picnic = [
 
 var geojsonMarkerOptions = {
     radius: 6,
-    fillColor: "#f7523c",
+    fillColor: "#f7a3ba",
     color: "#000",
     weight: 0.5,
     opacity: 1,
