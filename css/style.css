@@ -113,7 +113,23 @@ html,body{
 
 .banner .homeText{
   position: absolute;
-  right: 20%;
+  right: 16%;
+  top: 30%;
+  font-size: 20px;
+  color: white;
+}
+
+.banner .Go{
+  position: absolute;
+  right: 25%;
+  top: 30%;
+  font-size: 20px;
+  color: white;
+}
+
+.banner .entranceText{
+  position: absolute;
+  right: 30%;
   top: 30%;
   font-size: 20px;
   color: white;
