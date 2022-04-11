@@ -96,10 +96,10 @@ html,body{
 
 .banner h1{
   left: 1%;
-  right: 80%;
+  right: 60%;
   font-size: 23px;
   position: absolute;
-  top: 6%;
+  top: 20%;
   color: white;
 }
 

@@ -10,8 +10,8 @@ const beaver = [{
 }]
 
 var map = L.map('map', {
-  center: [40.25799688881308, -105.68651090017156],
-  zoom: 9
+  center: [40.114501656774884, -105.0516789114583],
+  zoom: 10
 });
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoieGludGlhbiIsImEiOiJjazh1bGtkOXMwY2h4M25wYXh2d3J5NGpzIn0.6f78lOG9zSD3Iicqt6nXqQ', {

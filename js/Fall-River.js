@@ -11,8 +11,8 @@ const fall = [{
 ]
 
 var map = L.map('map', {
-  center: [40.25799688881308, -105.68651090017156],
-  zoom: 9
+  center: [40.21105469314407, -105.1079838447788],
+  zoom: 10
 });
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoieGludGlhbiIsImEiOiJjazh1bGtkOXMwY2h4M25wYXh2d3J5NGpzIn0.6f78lOG9zSD3Iicqt6nXqQ', {
