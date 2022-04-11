@@ -10,8 +10,8 @@ const wild = [{
 }]
 
 var map = L.map('map', {
-  center: [40.19106200036607, -105.43366334485326],
-  zoom: 9
+  center: [40.00939700373602, -104.9940006870812],
+  zoom: 10
 });
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoieGludGlhbiIsImEiOiJjazh1bGtkOXMwY2h4M25wYXh2d3J5NGpzIn0.6f78lOG9zSD3Iicqt6nXqQ', {
