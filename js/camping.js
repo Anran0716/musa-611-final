@@ -245,7 +245,8 @@ var geojsonMarkerOptions = {
 var geojsonPolyOptions = {
   weight: 5,
   color: "#f7945e",
-  fillOpacity: 0
+  fillColor: "#fafc83",
+  fillOpacity: 1
 };
 
 
