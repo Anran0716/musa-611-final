@@ -364,12 +364,19 @@ i {
   width: 60%;
 }
 .my-legend .legend-title {
-  text-align: left;
+  position:absolute;
+  z-index: 1000;
+  bottom:10px;
+  left:10px;
   margin-bottom: 5px;
   font-weight: bold;
   font-size: 90%;
   }
 .my-legend .legend-scale ul {
+  position:absolute;
+  z-index: 1000;
+  bottom:10px;
+  left:10px;
   margin: 0;
   margin-bottom: 5px;
   padding: 0;
@@ -377,6 +384,10 @@ i {
   list-style: none;
   }
 .my-legend .legend-scale ul li {
+  position:absolute;
+  z-index: 1000;
+  bottom:10px;
+  left:10px;
   font-size: 80%;
   list-style: none;
   margin-left: 0;
@@ -384,6 +395,10 @@ i {
   margin-bottom: 2px;
   }
 .my-legend ul.legend-labels li span {
+  position:absolute;
+  z-index: 1000;
+  bottom:10px;
+  left:10px;
   display: block;
   float: left;
   height: 16px;
@@ -393,6 +408,10 @@ i {
   border: 1px solid rgba(153, 153, 153, 0);
   }
 .my-legend .legend-source {
+  position:absolute;
+  z-index: 1000;
+  bottom:10px;
+  left:10px;
   font-size: 70%;
   color: #999;
   clear: both;

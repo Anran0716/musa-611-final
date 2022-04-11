@@ -233,6 +233,17 @@ const camping_zone =  [
 { "type": "Feature", "properties": { "FID": 23, "NAME": "CONY CREEK", "CODE": "2G", "ACRES": 454.74, "GlobalID": "{13589775-E6E4-4AA4-9074-E2790C913513}", "PUBLICDISPLAY": "Public Map Display", "DATAACCESS": "Unrestricted", "UNITCODE": "ROMO", "UNITNAME": "Rocky Mountain National Park", "GROUPCODE": "N\/A", "GROUPNAME": "N\/A", "REGIONCODE": "IMR", "CREATEDATE": null, "CREATEUSER": "Unknown", "EDITDATE": "2019\/03\/21 16:38:13", "EDITUSER": "imrgis_nps", "MAPMETHOD": "Unknown", "MAPSOURCE": "Unknown", "SOURCEDATE": null, "XYACCURACY": "Unknown", "GEOMETRYID": "{46987701-1A2A-4CF7-B3DC-89E0278C2E80}", "NOTES": null, "SHAPE_Length": 0.065870030801871232, "SHAPE_Area": 0.0001947066975526358 }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -105.608058118999963, 40.17404524300008, 0.0 ], [ -105.606659683999965, 40.173237142000062, 0.0 ], [ -105.605353369999989, 40.168760810000038, 0.0 ], [ -105.607214487999954, 40.16473041200004, 0.0 ], [ -105.611065097999983, 40.164318943000069, 0.0 ], [ -105.614942812999971, 40.163287088000061, 0.0 ], [ -105.619976861999987, 40.162737230000062, 0.0 ], [ -105.621394042999952, 40.16462445500008, 0.0 ], [ -105.621630400999948, 40.165314436000074, 0.0 ], [ -105.622520388999988, 40.165929124000058, 0.0 ], [ -105.623149602999945, 40.166298755000071, 0.0 ], [ -105.623983025999962, 40.167155745000059, 0.0 ], [ -105.62522325399999, 40.167935297000042, 0.0 ], [ -105.626234894999982, 40.168672403000073, 0.0 ], [ -105.627004810999949, 40.169070199000032, 0.0 ], [ -105.627952497999956, 40.169375092000053, 0.0 ], [ -105.628971991999947, 40.170063307000078, 0.0 ], [ -105.629754626999954, 40.170321280000053, 0.0 ], [ -105.630311960999961, 40.170784678000075, 0.0 ], [ -105.631719786999952, 40.17098556600007, 0.0 ], [ -105.632686170999989, 40.171223134000059, 0.0 ], [ -105.632833073999961, 40.172006749000047, 0.0 ], [ -105.631815321999966, 40.172834371000079, 0.0 ], [ -105.630839336999941, 40.17323069400004, 0.0 ], [ -105.628959430999942, 40.172755972000061, 0.0 ], [ -105.627022557999965, 40.172550509000075, 0.0 ], [ -105.62506724299999, 40.172398811000051, 0.0 ], [ -105.622947890999967, 40.172596378000037, 0.0 ], [ -105.620770682999989, 40.173117144000059, 0.0 ], [ -105.618167950999975, 40.173782562000042, 0.0 ], [ -105.617232509999951, 40.173828409000066, 0.0 ], [ -105.616058251999959, 40.173346104000075, 0.0 ], [ -105.613711669999986, 40.173406641000042, 0.0 ], [ -105.61162315699994, 40.173887540000067, 0.0 ], [ -105.60946886399995, 40.174057580000067, 0.0 ], [ -105.608058118999963, 40.17404524300008, 0.0 ] ] ] ] } }
 ]
 
+function getColor(d) {
+    return d > 1000 ? '#800026' :
+           d > 500  ? '#BD0026' :
+           d > 200  ? '#E31A1C' :
+           d > 100  ? '#FC4E2A' :
+           d > 50   ? '#FD8D3C' :
+           d > 20   ? '#FEB24C' :
+           d > 10   ? '#FED976' :
+                      '#FFEDA0';
+}
+
 var geojsonMarkerOptions = {
     radius: 6,
     fillColor: "#fafc83",
@@ -244,9 +255,9 @@ var geojsonMarkerOptions = {
 
 var geojsonPolyOptions = {
   weight: 5,
-  color: "#f7945e",
   fillColor: "#fafc83",
-  fillOpacity: 1
+  color: "#f7945e",
+  fillOpacity: 0.4
 };
 
 
@@ -271,7 +282,15 @@ var highlightFeature = function(e){
   });
 }
 
-var layer1 =L.geoJson(camping_zone, { style: geojsonPolyOptions}).bindTooltip(layer => `<b>Trails</b>
+function onEachFeature(feature, layer) {
+    layer.on({
+        mouseover: highlightFeature,
+      mouseout: resetHighlight,
+        //click: zoomToFeature
+    });
+}
+
+var layer1 =L.geoJson(camping_zone, { style: geojsonPolyOptions, onEachFeature: onEachFeature}).bindTooltip(layer => `<b>Trails</b>
 <br><b>Camp zone name</b>:  ${layer.feature.properties.NAME}</br>
 <br><b>Area</b>:  ${layer.feature.properties.SHAPE_Area}</br>`,
   {permanent: false,
@@ -279,9 +298,10 @@ var layer1 =L.geoJson(camping_zone, { style: geojsonPolyOptions}).bindTooltip(la
     direction: "right",
 }).addTo(map);
 
+
 var highlightFeature1 = function(e){
   var layer1 = e.target;
-  layer.setStyle({
+  layer1.setStyle({
     weight:5,
     color:"#f03b20",
     dashArray: '',
