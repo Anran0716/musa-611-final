@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "rocky_poi",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Rocky Mountain Gateway", "x_lon_": -105.586701756, "y_lat_": 40.4137844794 }, "geometry": { "type": "Point", "coordinates": [ -105.586701755999968, 40.413784479000071 ] } },
+{ "type": "Feature", "properties": { "name": "Continental Divide", "x_lon_": -105.810993361, "y_lat_": 40.421163843800002 }, "geometry": { "type": "Point", "coordinates": [ -105.810993360999987, 40.421163844000034 ] } },
+{ "type": "Feature", "properties": { "name": "YMCA of the Rockies", "x_lon_": -105.569005929, "y_lat_": 40.345184099800001 }, "geometry": { "type": "Point", "coordinates": [ -105.569005928999957, 40.34518410000004 ] } },
+{ "type": "Feature", "properties": { "name": "Grand Lake Lodge", "x_lon_": -105.82664473200001, "y_lat_": 40.259390294500001 }, "geometry": { "type": "Point", "coordinates": [ -105.826644731999977, 40.25939029400007 ] } },
+{ "type": "Feature", "properties": { "name": "Wildwood Inn", "x_lon_": -105.57384677100001, "y_lat_": 40.402339198 }, "geometry": { "type": "Point", "coordinates": [ -105.573846770999978, 40.40233919800005 ] } },
+{ "type": "Feature", "properties": { "name": "Old Forest Inn", "x_lon_": -105.662320889, "y_lat_": 40.3500345092 }, "geometry": { "type": "Point", "coordinates": [ -105.662320888999943, 40.350034509000068 ] } }
+]
+}

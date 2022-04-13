@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "grand_lake_lodge",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 33, "osm_id": "1323151584", "code": 2742, "fclass": "Campsite", "name": "Adams Falls" }, "geometry": { "type": "Point", "coordinates": [ -105.798073699641463, 40.236678700161917 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 452, "osm_id": "358912024", "code": 4111, "fclass": "Trailhead", "name": "Nisa Mountain" }, "geometry": { "type": "Point", "coordinates": [ -105.798621500082106, 40.288595899980862 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 453, "osm_id": "358912028", "code": 4111, "fclass": "Trailhead", "name": "Green Mountain" }, "geometry": { "type": "Point", "coordinates": [ -105.822511199732048, 40.296095899606144 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 575, "osm_id": "8905140319", "code": 4111, "fclass": "Trailhead", "name": "Cascade Falls Point" }, "geometry": { "type": "Point", "coordinates": [ -105.769824299851507, 40.276324499576049 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 591, "osm_id": "6799660494", "code": 2301, "fclass": "Restaurant", "name": "Grand Pizza" }, "geometry": { "type": "Point", "coordinates": [ -105.816885999689077, 40.251270300184274 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 593, "osm_id": "6799747889", "code": 2301, "fclass": "Restaurant", "name": "El Pacifico" }, "geometry": { "type": "Point", "coordinates": [ -105.820348799657324, 40.251621900030727 ] } }
+]
+}
