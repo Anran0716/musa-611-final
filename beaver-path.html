@@ -1,0 +1,51 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS Imports -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/path.css" />
+  <!-- mapbox included -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css' rel='stylesheet' />
+  <!-- boostrap import -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  <!-- banner -->
+  <div class="banner">
+    <h1><span style="color: #FF3C5F;">Transportation-Wild Basin</span></h1>
+    <a class="homeText"  href="./index.html">Home</a>
+    <a class="routeText" href="./findRoute.html">Landmark</a>
+    <a class="Go" onclick="window.open('https://www.google.com/maps/dir/%E4%B8%B9%E4%BD%9B%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA+(DEN)8500+Pe%C3%B1a+Blvd,+Denver,+CO+80249/Wild+Basin+Ranger+Station,+County+Highway+115,+%E8%89%BE%E4%BC%A6%E6%96%AF%E5%B8%95%E5%85%8B%E7%A7%91%E7%BD%97%E6%8B%89%E5%A4%9A%E5%B7%9E/@40.1040273,-105.3962054,10z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x876c7f2a98ff44ff:0x49583bb435b59c6a!2m2!1d-104.6737376!2d39.8560963!1m5!1m1!1s0x876bd86c3fabb579:0x8fc9fa53a41ea70f!2m2!1d-105.5663947!2d40.2085145!3e0?hl=zh-CN')">Go</button>
+    <a class="entranceText" href="./entrance.html">Entrance</a>
+  </div>
+
+
+  <!-- sidebar -->
+  <!-- style="position: absolute; top:0; left: 0; width: 400px; height: 100%; background-color: red" -->
+
+
+  <!-- map -->
+  <div id="map"></div>
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/beaver-path.js"></script>
+  <script src="js/boundary.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
