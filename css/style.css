@@ -111,9 +111,17 @@ html,body{
   color: white;
 }
 
+.banner .placeText{
+  position: absolute;
+  right: 13%;
+  top: 30%;
+  font-size: 20px;
+  color: white;
+}
+
 .banner .homeText{
   position: absolute;
-  right: 16%;
+  right: 19%;
   top: 30%;
   font-size: 20px;
   color: white;
@@ -422,3 +430,75 @@ i {
 .searchBox .container ul li {
       color: white;
   }
+select{
+  color:black;
+}
+.neighbors > ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+.neighbors li {
+  padding: 0.5rem 0;
+  border-top: 1px solid silver;
+}
+
+#button7 {
+  background-color: #faa770;
+  position: relative;
+  left:20%;
+  }
+
+  .searchBox1{
+  position: fixed;
+  left: 0;
+  width: 25%;
+  height: 22%;
+  top: 10%;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 450;
+}
+
+.searchBox1 .container{
+  top:20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBox1 .box{
+  width: 80%;
+  height: 20%;
+  margin: 10px;
+}
+
+.searchBox1 .container .button {
+  position:relative;
+  left: 5%;
+  border: none;
+  color: white;
+  padding: 5px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Raleway',sans-serif;
+  font-variant: normal;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 8px;
+  background-color: #FF3C5F; /* Yellow */
+  margin-right: 20px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+
+}
+#map1 {
+  position:absolute;
+  right: 0px;
+  left: 25%;
+  height: 90%;
+  top: 10%;
+  z-index: 98;
+}

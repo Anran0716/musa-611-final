@@ -254,22 +254,11 @@ var geojsonMarkerOptions = {
 };
 
 var geojsonPolyOptions = {
-  weight: 5,
-  fillColor: "#fafc83",
-  color: "#f7945e",
+  weight: 2,
+  fillColor: "#fad76e",
+  color: "#fffdfc",
   fillOpacity: 0.4
 };
-
-
-var layer = L.geoJSON(campsites,{ pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng, geojsonMarkerOptions);
-    } }).bindTooltip(layer => ` <b>Campsites</b>
-   <br><b>Name</b>:  ${layer.feature.properties.Campsite}</br>
-   <br><b>District</b>:  ${layer.feature.properties.DISTRICT}</br>`,
-  {permanent: false,
-    offset: [-50, -60],
-    direction: "right",
-}).addTo(map);
 
 // highlight function
 var highlightFeature = function(e){
@@ -282,6 +271,10 @@ var highlightFeature = function(e){
   });
 }
 
+var resetHighlight = function(e){
+  featureGroup.resetStyle(e.target)
+}
+
 function onEachFeature(feature, layer) {
     layer.on({
         mouseover: highlightFeature,
@@ -290,6 +283,19 @@ function onEachFeature(feature, layer) {
     });
 }
 
+
+var layer = L.geoJSON(campsites,{ pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, geojsonMarkerOptions);
+    } }).bindTooltip(layer => ` <b>Campsites</b>
+   <br><b>Name</b>:  ${layer.feature.properties.Campsite}</br>
+   <br><b>District</b>:  ${layer.feature.properties.DISTRICT}</br>`,
+  {permanent: false,
+    offset: [-50, -60],
+    direction: "right",
+}).addTo(map);
+
+
+
 var layer1 =L.geoJson(camping_zone, { style: geojsonPolyOptions, onEachFeature: onEachFeature}).bindTooltip(layer => `<b>Trails</b>
 <br><b>Camp zone name</b>:  ${layer.feature.properties.NAME}</br>
 <br><b>Area</b>:  ${layer.feature.properties.SHAPE_Area}</br>`,
@@ -297,14 +303,3 @@ var layer1 =L.geoJson(camping_zone, { style: geojsonPolyOptions, onEachFeature: 
     offset: [-50, -60],
     direction: "right",
 }).addTo(map);
-
-
-var highlightFeature1 = function(e){
-  var layer1 = e.target;
-  layer1.setStyle({
-    weight:5,
-    color:"#f03b20",
-    dashArray: '',
-    fillOpacity:1
-  });
-}

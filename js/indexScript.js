@@ -30,3 +30,6 @@ $('#button5').click(function(e){
 $('#button6').click(function(e){
     window.location.href="./eating.html"
 })
+$('#button7').click(function(e){
+    window.location.href="./application.html"
+})

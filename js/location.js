@@ -21,6 +21,7 @@ let layerGroup = L.layerGroup().addTo(map);
 
 // import Recreation Assets data
 const partySelect = document.querySelector('#party-filter');
+const neighborList = document.querySelector('.neighbors ul');
 
 const rocky_poi={
 "type": "FeatureCollection",
@@ -36,6 +37,8 @@ const rocky_poi={
 ]
 }
 
+//写一个show信息的function
+
 handlePartyFilterChange = function(){
   for (n of rocky_poi.features)
 {
@@ -43,12 +46,14 @@ handlePartyFilterChange = function(){
   {
     layerGroup.clearLayers();
     const geoJsonLayer = L.geoJSON(n, { pointToLayer: (p, latlng) => L.marker(latlng) })
+    .bindTooltip(n => n.properties.name)
   .addTo(layerGroup);
   let url = `https://raw.githubusercontent.com/Anran0716/musa-611-final/main/rawdata/${n.properties.name}.geojson`;
   fetch(url)
      .then(resp => resp.json())
      .then(poi_data => {
        const geoJsonLayer1 = L.geoJSON(poi_data, { pointToLayer: (p, latlng) => L.marker(latlng) })
+       .bindTooltip(l => l.feature.properties.name)
        .addTo(layerGroup);
      });
 return geoJsonLayer;
