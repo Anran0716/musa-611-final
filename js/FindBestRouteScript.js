@@ -4,14 +4,13 @@ var map = L.map('map', {
     center: [40.000, -75.1090],
     zoom: 12
   });
-  
-  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoieGludGlhbiIsImEiOiJjazh1bGtkOXMwY2h4M25wYXh2d3J5NGpzIn0.6f78lOG9zSD3Iicqt6nXqQ', {
-      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-      maxZoom: 20,
-      id: 'mapbox/light-v10',
-      tileSize: 512,
-      zoomOffset: -1,
-      accessToken: 'pk.eyJ1IjoieGludGlhbiIsImEiOiJjazh1bGtkOXMwY2h4M25wYXh2d3J5NGpzIn0.6f78lOG9zSD3Iicqt6nXqQ'
+
+  L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}{r}.{ext}', {
+  	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  	subdomains: 'abcd',
+  	minZoom: 0,
+  	maxZoom: 18,
+  	ext: 'png'
   }).addTo(map);
 
 
@@ -43,7 +42,7 @@ var updatePosition = function(lat, lng, updated) {
 };
 
 $(document).ready(function(){
-       
+
     if ("geolocation" in navigator) {
         navigator.geolocation.getCurrentPosition(function(position) {
         updatePosition(position.coords.latitude, position.coords.longitude, position.timestamp);
@@ -56,15 +55,15 @@ $(document).ready(function(){
                 routeFindByCoord(urlLng,urlLat);
             }
         });
-        
+
         $("#starting-point").val("Your Current Location");
       } else {
         alert("Unable to access geolocation API!");
       }
 });
-  
+
 $("#current-location").click(function(e){
-    // console.log(e);    
+    // console.log(e);
     if ("geolocation" in navigator) {
         navigator.geolocation.getCurrentPosition(function(position) {
           updatePosition(position.coords.latitude, position.coords.longitude, position.timestamp);
@@ -129,10 +128,10 @@ var findDestCoords = function(dest){
     // console.log(placeCoord);
     return placeCoord;
 
-} 
+}
 
 var findRoute = function(O,D){
-    
+
     DCoodrs = findDestCoords(D);
 
     if(O == "Your Current Location"){
@@ -146,7 +145,7 @@ var findRoute = function(O,D){
 
     // console.log(route_lat_long);
     var route =`https://api.mapbox.com/directions/v5/mapbox/driving/${route_lat_long}?access_token=pk.eyJ1IjoibnppbW1lcm1hbiIsImEiOiJjanR1NTBjeWMwZTBlM3lsbXU2d3BtYThzIn0.R0mxkEoHLh-xKk7oG0Tqxg`;
- 
+
     $.ajax({
         url: route,
         type: "get",
@@ -212,24 +211,24 @@ $("#clear").click(function(e){
         state.startingPosition.latlnglist=null;
         state.startingPosition.updated=null;
         $("#starting-point").val(null);
-    }   
+    }
     if (state.startingPosition.marker2) {
         map.removeLayer(state.startingPosition.marker2);
         state.startingPosition.marker2=null;
         // state.startingPosition.latlnglist=null;
         // state.startingPosition.updated=null;
         $("#starting-point").val(null);
-    } 
+    }
     if (state.destPosition.marker) {
         map.removeLayer(state.destPosition.marker);
         state.destPosition.marker=null
         state.destPosition.latlnglist=null;
         state.destPosition.updated=null;
         $("#dest").val(null);
-    }  
+    }
     if (state.route){
         map.removeLayer(state.route);
-    }  
+    }
     // console.log(state);
     // map.eachLayer(function (layer) {
     //     map.removeLayer(layer);
