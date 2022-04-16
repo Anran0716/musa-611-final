@@ -55,7 +55,26 @@ handlePartyFilterChange = function(){
        const geoJsonLayer1 = L.geoJSON(poi_data, { pointToLayer: (p, latlng) => L.marker(latlng) })
        .bindTooltip(l => l.feature.properties.name)
        .addTo(layerGroup);
+       update_poi_list(poi_data);
+     }
+   );
+
+   const update_poi_list = function (data) {
+     neighborListItems = {};
+     neighborList.innerHTML = '';
+     data.features.forEach(poi_feature => {
+       const type = poi_feature.properties.fclass;
+
+       const neighborListItem = htmlToElement(`
+         <li class="neighbor">
+           <span class="name">${type}</span>
+         </li>
+       `);
+       neighborList.appendChild(neighborListItem);
      });
+}
+
+
 return geoJsonLayer;
   }
 }

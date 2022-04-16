@@ -436,6 +436,7 @@ select{
 .neighbors > ul {
   list-style: none;
   padding: 1rem;
+  z-index:
 }
 
 .neighbors li {
