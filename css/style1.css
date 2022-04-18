@@ -10,42 +10,23 @@ html,body{
 }
 
 #map {
-  position: absolute;
+  position:absolute;
   right: 0px;
-  width: 100%;
+  left: 25%;
   height: 90%;
-  bottom: 0;
-}
-
-.sidebar {
-  position: absolute;
-  border-radius: 35px;
-  right: 23px;
-  width: 26.5%;
-  height: 65%;
-  top: 16%;
-  overflow-y: auto;
-  opacity: 0.89;
-  padding: 20px;
-  font-size: 16px;
-  background-image: linear-gradient(rgb(240, 39, 133), rgb(250, 115, 74));
-  color: #ffffff ;
+  top: 10%;
+  z-index: 98;
 }
 
 .searchBox{
-  position: absolute;
-  border-radius: 35px;
-  right: 23px;
-  width: 20%;
-  height: 35%;
-  top: 16%;
-  overflow-y: auto;
-  opacity: 0.89;
-  padding: 20px;
-  font-size: 16px;
-  background-image: linear-gradient(rgb(240, 39, 133), rgb(250, 115, 74));
-  color: #ffffff ;
-  z-index: 450;
+  position: fixed;
+  left: 0;
+  width: 25%;
+  height: 22%;
+  top: 10%;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 99;
 }
 
 .searchBox .container{
@@ -81,6 +62,19 @@ html,body{
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
 
+}
+
+
+
+.banner {
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  left: 0px;
+  top: 0px;
+  background: #FFD43C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index:100;
 }
 
 .banner {
@@ -144,6 +138,16 @@ html,body{
 }
 
 
+.sidebar {
+  position:absolute;
+  left:0px;
+  width:25%;
+  height:70%;
+  top:30%;
+  background-color:#E6E5E1;
+  overflow-y:auto;
+  z-index: 98;
+}
 
 .w3-card-4,.w3-hover-shadow:hover{
   box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
@@ -306,7 +310,7 @@ i {
   cursor: pointer;
 }
 
-.neighbors li p {
+.card-continer .card p {
   z-index: 101;
   position: absolute;
   top: 7px;
@@ -320,7 +324,7 @@ i {
   transition: all 0.2s ease;
 }
 
-.neighbors li .pic {
+.card-continer .card .pic {
   z-index: 100;
   width: 80%;
   height: 100%;
@@ -329,13 +333,13 @@ i {
   filter: grayscale(100%);
 }
 
-.neighbors li:hover i {
+.card-continer .card:hover i {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 
-.neighbors li button {
+.card-continer .card button {
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -351,183 +355,32 @@ i {
   z-index: 100;
 }
 
-.neighbors li button i {
+.card-continer .card button i {
   font-size: 3rem;
 }
 
 /* 出现半圆变化 */
-.neighbors li button {
+.card-continer .card:hover button {
   transform: scale(14.5);
 }
 
-.neighbors li:hover p {
+.card-continer .card:hover p {
   color: #fff;
 }
 
-.neighbors li:hover .pic {
+.card-continer .card:hover .pic {
   filter: grayscale(0);
 }
-.d-flex{
-  right: 5%;
-  width: 60%;
-}
-.my-legend .legend-title {
-  position:absolute;
-  z-index: 1000;
-  bottom:10px;
-  left:10px;
-  margin-bottom: 5px;
-  font-weight: bold;
-  font-size: 90%;
-  }
-.my-legend .legend-scale ul {
-  position:absolute;
-  z-index: 1000;
-  bottom:10px;
-  left:10px;
-  margin: 0;
-  margin-bottom: 5px;
-  padding: 0;
-  float: left;
-  list-style: none;
-  }
-.my-legend .legend-scale ul li {
-  position:absolute;
-  z-index: 1000;
-  bottom:10px;
-  left:10px;
-  font-size: 80%;
-  list-style: none;
-  margin-left: 0;
-  line-height: 18px;
-  margin-bottom: 2px;
-  }
-.my-legend ul.legend-labels li span {
-  position:absolute;
-  z-index: 1000;
-  bottom:10px;
-  left:10px;
-  display: block;
-  float: left;
-  height: 16px;
-  width: 30px;
-  margin-right: 5px;
-  margin-left: 0;
-  border: 1px solid rgba(153, 153, 153, 0);
-  }
-.my-legend .legend-source {
-  position:absolute;
-  z-index: 1000;
-  bottom:10px;
-  left:10px;
-  font-size: 70%;
-  color: #999;
-  clear: both;
-  }
-.my-legend a {
-  color: #777;
-  }
-.searchBox .container ul li {
-      color: white;
-  }
-select{
-  color:black;
-}
 .neighbors > ul {
-  pointer-events: all;
-  padding-top: 0;
+  list-style: none;
+  padding: 1rem;
+  z-index:
 }
 
 .neighbors li {
-  background-color: white;
-  color: black;
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid gray;
+  padding: 0.5rem 0;
+  border-top: 1px solid silver;
 }
-.neighbor .name {
-  display: block;
-}
-
-.neighbor .address {
-  display: block;
-  font-weight: 300;
-}
-
-.neighbor .party,
-.neighbor .last-vote-date {
-  display: inline-block;
-  font-size: 0.8rem;
-  color: #444;
-  background-color: #eee;
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.75rem;
-}
-
-/*
-  Emojis:
-  - 🗳️ 01F5F3
-  - 📅 01F4C5
-*/
-.neighbor .party::before {
-  content: "\01F5F3";
-  padding-right: 0.5rem;
-}
-
-.neighbor .last-vote-date::before {
-  content: "\01F4C5";
-  padding-right: 0.5rem;
-}
-#button7 {
-  background-color: #faa770;
-  position: relative;
-  left:20%;
-  }
-
-  .searchBox1{
-  position: fixed;
-  left: 0;
-  width: 25%;
-  height: 22%;
-  top: 10%;
-  background-color: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  z-index: 450;
-}
-
-.searchBox1 .container{
-  top:20%;
-  justify-content: center;
-  align-items: center;
-}
-
-.searchBox1 .box{
-  width: 80%;
-  height: 20%;
-  margin: 10px;
-}
-
-.searchBox1 .container .button {
-  position:relative;
-  left: 5%;
-  border: none;
-  color: white;
-  padding: 5px 18px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: 'Raleway',sans-serif;
-  font-variant: normal;
-  font-weight: bold;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  border-radius: 8px;
-  background-color: #FF3C5F; /* Yellow */
-  margin-right: 20px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
 
 }
 #map1 {

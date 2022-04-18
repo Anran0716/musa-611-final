@@ -64,10 +64,11 @@ handlePartyFilterChange = function(){
      neighborList.innerHTML = '';
      data.features.forEach(poi_feature => {
        const type = poi_feature.properties.fclass;
-
+       const name1 = poi_feature.properties.name;
        const neighborListItem = htmlToElement(`
          <li class="neighbor">
-           <span class="name">${type}</span>
+         <span class="name">${name1}</span>
+           <span class="address">${type}</span>
          </li>
        `);
        neighborList.appendChild(neighborListItem);
