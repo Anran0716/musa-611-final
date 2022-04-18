@@ -331,10 +331,8 @@ i {
   filter: grayscale(100%);
 }
 
-.neighbors li:hover i {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
+.neighbors li:hover  {
+  cursor: pointer;
 }
 
 .neighbors li button {
@@ -429,15 +427,14 @@ i {
 .my-legend a {
   color: #777;
   }
-.searchBox .container ul li {
-      color: white;
-  }
+
 select{
   color:black;
 }
 .neighbors > ul {
   pointer-events: all;
   padding-top: 0;
+  list-style: none;
 }
 
 .neighbors li {
@@ -447,6 +444,21 @@ select{
   padding: 1rem;
   border-radius: 0.5rem;
   border: 1px solid gray;
+}
+.neighbors li a{
+  color: white;
+}
+.neighbors li.Trailhead {
+  background-image: url('https://raw.githubusercontent.com/Anran0716/musa-611-final/main/img/trailhead.jpg');
+  background-size: cover;
+}
+.neighbors li.Campsite {
+  background-image: url('https://raw.githubusercontent.com/Anran0716/musa-611-final/main/img/campsite.jpg');
+  background-size: cover;
+}
+.neighbors li.Restaurant {
+  background-image: url('https://raw.githubusercontent.com/Anran0716/musa-611-final/main/img/restaurant.jpg');
+  background-size: cover;
 }
 .neighbor .name {
   display: block;

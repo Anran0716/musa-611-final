@@ -45,19 +45,28 @@ handlePartyFilterChange = function(){
   if (n.properties.name == partySelect.value)
   {
     layerGroup.clearLayers();
-    const geoJsonLayer = L.geoJSON(n, { pointToLayer: (p, latlng) => L.marker(latlng) })
-    .bindTooltip(n => n.properties.name)
+    const geoJsonLayer = L.geoJSON(n, { pointToLayer: (p, latlng) => L.circleMarker(latlng, {
+ color: '#f03',
+ fillColor: '#f03',
+ fillOpacity: 0.80
+}) })
+    .bindTooltip(cml => cml.feature.properties.name)
   .addTo(layerGroup);
   let url = `https://raw.githubusercontent.com/Anran0716/musa-611-final/main/rawdata/${n.properties.name}.geojson`;
   fetch(url)
      .then(resp => resp.json())
      .then(poi_data => {
-       const geoJsonLayer1 = L.geoJSON(poi_data, { pointToLayer: (p, latlng) => L.marker(latlng) })
+       const geoJsonLayer1 = L.geoJSON(poi_data, { pointToLayer: (p, latlng) => L.circleMarker(latlng, {
+    color: '#00e1ff',
+    fillColor: '#00e1ff',
+    fillOpacity: 0.80
+}) })
        .bindTooltip(l => l.feature.properties.name)
        .addTo(layerGroup);
        update_poi_list(poi_data);
      }
    );
+
 
    const update_poi_list = function (data) {
      neighborListItems = {};
@@ -66,9 +75,11 @@ handlePartyFilterChange = function(){
        const type = poi_feature.properties.fclass;
        const name1 = poi_feature.properties.name;
        const neighborListItem = htmlToElement(`
-         <li class="neighbor">
+         <li class="neighbor ${type}">
+         <a  href="findRoute.html">
          <span class="name">${name1}</span>
            <span class="address">${type}</span>
+           </a>
          </li>
        `);
        neighborList.appendChild(neighborListItem);

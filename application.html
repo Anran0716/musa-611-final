@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/popUp.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style1.css" />
 
     <!-- mapbox included -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js'></script>
@@ -34,7 +34,7 @@
           <fieldset id ="filters">
           <label for="party-filter">Enter your location: </label>
           <select id="party-filter">
-            <option value="">(All Parties)</option>
+            <option value="">(Your location)</option>
             <option>Rocky Mountain Gateway</option>
             <option>Continental Divide</option>
             <option>YMCA of the Rockies</option>
@@ -44,38 +44,18 @@
           </select>
         </div>
         <!-- card1 -->
-        <div class="card-continer" id = "card-continer">
-          <div class="card">
-            <h2>Neighbor 1</h2>
-          </div>
-        </div>
-        <!-- card1 end -->
-        <!-- card2 -->
-        <div class="card-continer" id = "card-continer">
-          <div class="card">
-            <h2>Neighbor 2</h2>
-          </div>
+        <div class="neighbors">
+          <ul>
+          </ul>
         </div>
         <!-- card2 end -->
       </div>
     </div>
 
 
-      <h2>Neighbor 2</h2>
-       <!-- Card -->
-
-
-
-
-
-
-
-    <!-- sidebar -->
-    <!-- style="position: absolute; top:0; left: 0; width: 400px; height: 100%; background-color: red" -->
-
-
     <!-- map -->
     <div id="map"></div>
+    
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
