@@ -76,7 +76,7 @@ handlePartyFilterChange = function(){
        const name1 = poi_feature.properties.name;
        const neighborListItem = htmlToElement(`
          <li class="neighbor ${type}">
-         <a  href="findRoute.html">
+          <a href="findRoute.html?orig=${partySelect.value}&dest=${name1}">
          <span class="name">${name1}</span>
            <span class="address">${type}</span>
            </a>
