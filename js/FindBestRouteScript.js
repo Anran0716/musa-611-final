@@ -2,6 +2,7 @@ var map = L.map('map', {
   center: [40.343182, -105.688103],
   zoom: 11
 });
+
 var geojsonLineOptions = {
   weight: 3,
   color: "#fa7f88",
@@ -47,5 +48,28 @@ fetch(url)
 
         const geoJsonLayer1 =  L.geoJSON(feature1, {style: geojsonLineOptions}).addTo(layerGroup);
        }
+       if(f.properties.name == originName)
+       {
+         let feature1=f;
+         //insert origin & destination
+
+        const geoJsonLayer2 =  L.geoJSON(feature1, {style: geojsonLineOptions}).addTo(layerGroup);
+       }
      }
+     initializeDestChoices(poi_data.features);
 })
+
+let initializeDestChoices = (features) => {
+  let destination_group = [];
+  features.forEach(feature => {
+    let dest_name = feature.properties.name;
+    if (!destination_group.includes(dest_name)) {
+      destination_group.push(dest_name);
+    }
+  });
+  dest_name.sort();
+  let destorder = document.getElementById('party-filter1');
+  destination_group.forEach(dest_name => {
+    destorder.appendChild(htmlToElement(`<option>${dest_name}</option>`));
+  });
+};
