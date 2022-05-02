@@ -21,6 +21,13 @@ img {
 object-fit: cover;
 }
 
+
+a:visited {
+  color: #000060;
+}
+
+
+
 .intro-pic{
   margin-top: 10px;
 }
