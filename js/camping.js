@@ -1,3 +1,5 @@
+
+
 const campsites = [
 { "type": "Feature", "properties": { "OBJECTID": 1, "Campsite": "Arch Rocks", "FMSS": "89126", "DISTRICT": "THOMPSON RIVER", "EditDate": "2016\/02\/08 00:00:00", "GroupSite": "No", "EditBy": "ROMO GIS", "NAD83_UTM_Easting": 444472.85329, "NAD83_UTM_Northing": 4466812.9412099998, "WGS84_LON_DD": -105.65386647599996, "WGS84_LAT_DD": 40.350031949000027, "WGS84_LAT_DDM": "40 21.00192N", "WGS84_LON_DDM": "105 39.23199W", "WGS84_LAT_DMS": "40 21 00.11502N", "WGS84_LON_DMS": "105 39 13.91931W", "PUBLICDISPLAY": "Public Map Display", "DATAACCESS": "Unrestricted", "UNITCODE": "ROMO", "UNITNAME": "Rocky Mountain National Park", "REGIONCODE": "IMR", "CREATEDATE": "2016\/02\/08 00:00:00", "CREATEUSER": "Geoff Clark", "EDITUSER": "Geoff Clark", "MAPMETHOD": "GNSS", "MAPSOURCE": "Wilderness Office", "SOURCEDATE": null, "XYACCURACY": null, "GEOMETRYID": null, "NOTES": null, "GlobalID": "{706C905A-9267-44F6-B218-A58C562DB348}" }, "geometry": { "type": "Point", "coordinates": [ -105.65386657, 40.35003191800007, 0.0 ] } },
 { "type": "Feature", "properties": { "OBJECTID": 2, "Campsite": "Box Canyon", "FMSS": "91531", "DISTRICT": "COLORADO RIVER", "EditDate": "2016\/02\/08 00:00:00", "GroupSite": "No", "EditBy": "ROMO GIS", "NAD83_UTM_Easting": 426499.97963999998, "NAD83_UTM_Northing": 4480128.7061299998, "WGS84_LON_DD": -105.86702282899995, "WGS84_LAT_DD": 40.46859218700007, "WGS84_LAT_DDM": "40 28.11553N", "WGS84_LON_DDM": "105 52.02137W", "WGS84_LAT_DMS": "40 28 06.93187N", "WGS84_LON_DMS": "105 52 01.28218W", "PUBLICDISPLAY": "Public Map Display", "DATAACCESS": "Unrestricted", "UNITCODE": "ROMO", "UNITNAME": "Rocky Mountain National Park", "REGIONCODE": "IMR", "CREATEDATE": "2016\/02\/08 00:00:00", "CREATEUSER": "Geoff Clark", "EDITUSER": "Geoff Clark", "MAPMETHOD": "GNSS", "MAPSOURCE": "Wilderness Office", "SOURCEDATE": null, "XYACCURACY": null, "GEOMETRYID": null, "NOTES": null, "GlobalID": "{C0F3B3C6-00A1-4AF1-B184-EA162D979C41}" }, "geometry": { "type": "Point", "coordinates": [ -105.86702292199999, 40.468592155000067, 0.0 ] } },
@@ -254,10 +256,10 @@ var geojsonMarkerOptions = {
 };
 
 var geojsonPolyOptions = {
-  weight: 2,
-  fillColor: "#fad76e",
-  color: "#fffdfc",
-  fillOpacity: 0.4
+  weight: 3,
+  fillColor: "#e63e5a",
+  color: "#ffe3e8",
+  fillOpacity: 0.8
 };
 
 // highlight function
