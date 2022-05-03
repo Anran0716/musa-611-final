@@ -12,14 +12,14 @@ function sendVal(val) {
 
 //  document.getElementById('button1').addEventListener("click", ChangePage);
 $('#button1').click(function(e){
-    window.location.href="./page2-Introduction-y.html"
+    window.location.href="./picnic.html"
 })
 
 $('#button2').click(function(e){
-    window.location.href="./page5-landmark-y.html.html"
+    window.location.href="./hiking.html"
 })
 $('#button3').click(function(e){
-    window.location.href="./page4-Serviceoverview.html.html"
+    window.location.href="./camping.html"
 })
 $('#button4').click(function(e){
     window.location.href="./driving.html"
