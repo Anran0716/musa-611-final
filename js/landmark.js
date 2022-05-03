@@ -85,25 +85,13 @@ const landmarks = [
 
 
 
-var map = L.map('map', {
-  center: [40.343182, -105.628103],
-  zoom: 10
-});
-
-
-L.tileLayer('https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png', {
-	maxZoom: 18,
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
-
 var geojsonMarkerOptions = {
   radius: 10,
-  fillColor: "#fc5203",
+  fillColor: "#ff406c",
   color: "#000",
   weight: 1,
   opacity: 1,
-  fillOpacity: 0.45
+  fillOpacity: 0.7
 };
 
 
