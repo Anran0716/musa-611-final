@@ -14,7 +14,7 @@ const rental = [
 
 
 var map = L.map('map', {
-    scrollWheelZoom: false,
+    scrollWheelZoom: true,
   }).setView([40.06973623288899, -104.98497347891204], 9);
 
 
