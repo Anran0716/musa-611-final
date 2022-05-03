@@ -38,7 +38,7 @@ var geojsonMarkerOptions = {
 var layer = L.geoJSON(rental,{ pointToLayer: function (feature, latlng) {
         return L.circleMarker(latlng, geojsonMarkerOptions);
     } }).bindTooltip(layer => ` <b>Picnic area</b>
-   <br><b>Name</b>:  ${layer.feature.properties.NAME}</br>`,
+   <br><b>Name</b>:  ${layer.feature.properties.Name}</br>`,
   {permanent: false,
     offset: [-50, -60],
     direction: "right",
