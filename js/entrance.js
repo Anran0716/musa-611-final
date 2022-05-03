@@ -24,7 +24,7 @@ L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}{r}.{e
 }).addTo(map);
 
 var geojsonMarkerOptions = {
-    radius: 6,
+    radius: 10,
     fillColor: "#f7a3ba",
     color: "#000",
     weight: 0.5,

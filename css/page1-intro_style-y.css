@@ -9,7 +9,7 @@
 }
 
 body {
-  background: #feebe2;
+  background:rgba(255, 222, 232, 0.3);
   font-size: 30px;
   padding-left:2;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -17,7 +17,7 @@ body {
 
 
 .title {
-  margin-top:30px;
+  margin-top:20px;
   text-align:center;
 }
 
@@ -52,7 +52,7 @@ a:visited {
 
 .button {
   position:relative;
-  top:20px;
+  top:10%;
   left: 60%;
   border: none;
   color: white;
@@ -65,10 +65,10 @@ a:visited {
   font-variant: normal;
   font-weight: bold;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   border-radius: 8px;
-  background-color: #FF3C5F; /* Yellow */
+  background-color: #FF3C5F;
   margin-right: 20px;
   box-shadow: px 1px 4px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
@@ -76,12 +76,10 @@ a:visited {
 
 .button:hover{color:#fff!important;background-color:#49006a!important}
 
-
-
 .button-next {
   position:relative;
   left: 60%;
-  top:20px;
+  top:20%;
   border: none;
   color: white;
   padding: 8px 18px;
@@ -112,7 +110,7 @@ a:visited {
   height: 10%;
   left: 0px;
   top: 0px;
-  background: #f7a3e7;
+  background: rgba(247, 186, 236, 0.7);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   z-index:100;
 }
@@ -122,8 +120,8 @@ a:visited {
   right: 60%;
   font-size: 40px;
   position: absolute;
-  top: 20%;
-  color: white;
+  top: 15%;
+  color: #2b0e20;
   z-index: 100;
 }
 

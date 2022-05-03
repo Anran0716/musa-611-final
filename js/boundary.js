@@ -8,4 +8,17 @@ let boundary = {
 ]
 }
 
-var layer = L.geoJSON(boundary).addTo(map);
+
+var myStyle = {
+  fillColor: "#ff7800",
+  color: "#000",
+  weight: 3,
+  opacity: 1,
+  fillOpacity: 0.8,
+  dashArray: '3'
+
+};
+
+var layer = L.geoJSON(boundary, {
+    style: myStyle
+}).addTo(map);
