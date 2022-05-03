@@ -67,7 +67,7 @@ let initializeDestChoices = (features) => {
       destination_group.push(dest_name);
     }
   });
-  dest_name.sort();
+  //dest_name.sort();
   let destorder = document.getElementById('party-filter1');
   destination_group.forEach(dest_name => {
     destorder.appendChild(htmlToElement(`<option>${dest_name}</option>`));
