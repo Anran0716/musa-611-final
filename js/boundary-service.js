@@ -10,8 +10,8 @@ let boundary = {
 
 
 var map = L.map('map', {
-  center: [40.343182, -105.628103],
-  zoom: 10
+  center: [40.378182, -105.628103],
+  zoom: 11
 });
 
 
