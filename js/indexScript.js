@@ -33,3 +33,9 @@ $('#button6').click(function(e){
 $('#button7').click(function(e){
     window.location.href="./application.html"
 })
+$('#button8').click(function(e){
+    window.location.href="./page2-Introduction-y.html"
+})
+$('#button9').click(function(e){
+    window.location.href="./page4-Serviceoverview.html"
+})
