@@ -9,14 +9,14 @@ let boundary = {
 }
 
 
+
 var myStyle = {
-  fillColor: "#ff7800",
-  color: "#000",
+  color: "#4d004b",
+  fillColor:"#000",
   weight: 3,
   opacity: 1,
   fillOpacity: 0.8,
-  dashArray: '3'
-
+  dashArray: '4'
 };
 
 var layer = L.geoJSON(boundary, {
