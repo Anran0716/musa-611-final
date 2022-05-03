@@ -73,3 +73,11 @@ let initializeDestChoices = (features) => {
     destorder.appendChild(htmlToElement(`<option>${dest_name}</option>`));
   });
 };
+
+const search = function(){
+  let origin=document.getElementById('party-filter');
+  let destination=document.getElementById('party-filter1');
+  let url = `findRoute.html?orig=${origin.value}&dest=${destination.value}`;
+  window.location=url;
+  initializeDestChoices(poi_data.features);
+}

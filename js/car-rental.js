@@ -14,7 +14,7 @@ const rental = [
 
 
 var map = L.map('map', {
-    scrollWheelZoom: false,
+    scrollWheelZoom: true,
   }).setView([40.06973623288899, -104.98497347891204], 9);
 
 
@@ -24,7 +24,7 @@ L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png', 
   }).addTo(map);
 
 
-
+/*
 var geojsonMarkerOptions = {
     radius: 6,
     fillColor: "#f7a3ba",
@@ -33,13 +33,43 @@ var geojsonMarkerOptions = {
     opacity: 1,
     fillOpacity: 1
 };
+*/
 
+var CarIcon = L.icon({
+  iconUrl: './img/ca.png',
+  iconSize: [20, 20], // size of the icon
+  iconAnchor: [40, 40], // point of the icon which will correspond to marker's location
+  popupAnchor: [-30, -30], // point from which the popup should open relative to the iconAnchor
+});
+
+
+/*
+var layer = (rental, map, lat, lng, layer) => {
+  L.marker([lat, lng], { icon: CarIcon}).bindTooltip(layer => ` <b>Picnic area</b>
+ <br><b>Name</b>:  ${layer.feature.properties.Name}</br>`,
+{permanent: false,
+  offset: [-50, -60],
+  direction: "right",
+}).addTo(map);
+};
+*/
 
 var layer = L.geoJSON(rental,{ pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng, geojsonMarkerOptions);
+        return L.marker(latlng, {icon: CarIcon});
     } }).bindTooltip(layer => ` <b>Picnic area</b>
-   <br><b>Name</b>:  ${layer.feature.properties.NAME}</br>`,
+   <br><b>Name</b>:  ${layer.feature.properties.Name}</br>`,
   {permanent: false,
     offset: [-50, -60],
     direction: "right",
 }).addTo(map);
+
+/*
+var layer = L.geoJSON(rental,{ pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, geojsonMarkerOptions);
+    } }).bindTooltip(layer => ` <b>Picnic area</b>
+   <br><b>Name</b>:  ${layer.feature.properties.Name}</br>`,
+  {permanent: false,
+    offset: [-50, -60],
+    direction: "right",
+}).addTo(map);
+*/
