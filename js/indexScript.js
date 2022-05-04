@@ -43,3 +43,7 @@ $('#button9').click(function(e){
 $('#button10').click(function(e){
     window.location.href="./page1-Cover-y.html"
 })
+
+$('#button11').click(function(e){
+    window.location.href="./page3-Entrance-z.html"
+})

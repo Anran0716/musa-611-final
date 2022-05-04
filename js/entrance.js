@@ -14,7 +14,7 @@ const entrance = [{
 
 var geojsonMarkerOptions = {
     radius: 10,
-    fillColor: "#f7a3ba",
+    fillColor: "#cf3b2d",
     color: "#000",
     weight: 0.5,
     opacity: 1,
