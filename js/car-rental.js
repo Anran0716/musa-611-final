@@ -13,63 +13,14 @@ const rental = [
 
 
 
-var map = L.map('map', {
-    scrollWheelZoom: true,
-  }).setView([40.06973623288899, -104.98497347891204], 9);
+  var CarIcon = L.icon({
+    iconUrl: './img/Picture1.png',
+    iconSize: [63, 50], // size of the icon
+    iconAnchor: [40, 40], // point of the icon which will correspond to marker's location
+    popupAnchor: [-30, -30], // point from which the popup should open relative to the iconAnchor
+  });
 
 
-L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png', {
-    maxZoom: 12,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  }).addTo(map);
-
-
-/*
-var geojsonMarkerOptions = {
-    radius: 6,
-    fillColor: "#f7a3ba",
-    color: "#000",
-    weight: 0.5,
-    opacity: 1,
-    fillOpacity: 1
-};
-*/
-
-var CarIcon = L.icon({
-  iconUrl: './img/ca.png',
-  iconSize: [20, 20], // size of the icon
-  iconAnchor: [40, 40], // point of the icon which will correspond to marker's location
-  popupAnchor: [-30, -30], // point from which the popup should open relative to the iconAnchor
-});
-
-
-/*
-var layer = (rental, map, lat, lng, layer) => {
-  L.marker([lat, lng], { icon: CarIcon}).bindTooltip(layer => ` <b>Picnic area</b>
- <br><b>Name</b>:  ${layer.feature.properties.Name}</br>`,
-{permanent: false,
-  offset: [-50, -60],
-  direction: "right",
-}).addTo(map);
-};
-*/
-
-var layer = L.geoJSON(rental,{ pointToLayer: function (feature, latlng) {
-        return L.marker(latlng, {icon: CarIcon});
-    } }).bindTooltip(layer => ` <b>Picnic area</b>
-   <br><b>Name</b>:  ${layer.feature.properties.Name}</br>`,
-  {permanent: false,
-    offset: [-50, -60],
-    direction: "right",
-}).addTo(map);
-
-/*
-var layer = L.geoJSON(rental,{ pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng, geojsonMarkerOptions);
-    } }).bindTooltip(layer => ` <b>Picnic area</b>
-   <br><b>Name</b>:  ${layer.feature.properties.Name}</br>`,
-  {permanent: false,
-    offset: [-50, -60],
-    direction: "right",
-}).addTo(map);
-*/
+  var layer = L.geoJSON(rental,{ pointToLayer: function (feature, latlng) {
+          return L.marker(latlng, {icon: CarIcon});
+      } }).addTo(map);

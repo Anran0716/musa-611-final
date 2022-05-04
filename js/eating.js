@@ -21,9 +21,9 @@ const eating = [
 ]
 
 var geojsonMarkerOptions = {
-    radius: 6,
-    fillColor: "#1bcf54",
-    color: "#000",
+    radius: 9,
+    fillColor: "#db9b42",
+    color: "#8a2c0a",
     weight: 0.5,
     opacity: 1,
     fillOpacity: 1

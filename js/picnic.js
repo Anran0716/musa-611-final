@@ -19,11 +19,11 @@ const picnic = [
 ]
 
 var geojsonMarkerOptions = {
-    radius: 6,
-    fillColor: "#f7a3ba",
-    color: "#000",
-    weight: 0.5,
-    opacity: 1,
+    radius: 10,
+    fillColor: "#f0a800",
+    color: "#855d00",
+    weight: 3,
+    opacity: 0.8,
     fillOpacity: 1
 };
 
