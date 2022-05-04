@@ -1,7 +1,7 @@
 /* CSS magic only */
 
 function sendVal(val) {
-    var myUrl="./application.html"+"?"+"val="+val;
+    var myUrl="./"+val+".html";
     window.location.assign(myUrl);
  }
 
