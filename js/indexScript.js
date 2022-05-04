@@ -39,3 +39,11 @@ $('#button8').click(function(e){
 $('#button9').click(function(e){
     window.location.href="./page4-Serviceoverview.html"
 })
+
+$('#button10').click(function(e){
+    window.location.href="./page1-Cover-y.html"
+})
+
+$('#button11').click(function(e){
+    window.location.href="./page3-Entrance-z.html"
+})
