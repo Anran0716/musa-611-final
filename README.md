@@ -7,9 +7,9 @@
 
 ## Introduction
 Rocky mountain national park is one more visited national park in the United States. With majestic peaks in every direction, wildlife and some most incredible outdoor adventures, it is no wonder more than three million people visit the park each year. Since there are so many spots to visit as well as activities to do there, it is necessary to develop a travel application to help visitors better plan their trips.  
-This travel map can be displayed through computer or phone based on users. It consists of two parts:
-- story map: this part includes the basic transportation situation around Rocky mountain and a brief introduction of some famous landmarks.
-- tourism application: in this part you can filter out your favourite activities based on your current location. 
+Please [Click here](https://anran0716.github.io/musa-611-final/page1-Cover-y.html) to view our map. It consists of two parts:
+- story map: this part includes a brief introduction about the Rocky Mountain National Park, some famous landmarks in the park and also the route from Denver International Airport to four different entrances.
+- tourism application: this part includes service user might want to know about in the park like camping site, pinic location, hiking path, etc. 
 ## Data Sources
 All datasets we used are from [Rocky Mountain National Park Open Data](https://romo-nps.opendata.arcgis.com/)
 
@@ -28,10 +28,14 @@ All datasets we used are from [Rocky Mountain National Park Open Data](https://r
 |[Shuttle Stop](https://romo-nps.opendata.arcgis.com/datasets/rocky-mountain-national-park-shuttlestop-pt/explore?location=40.344708%2C-105.580136%2C13.75)|13 Points|
 |[Entrance Information](https://www.mycoloradoparks.com/park/faqs/rmnp-entrances)|4 Points|
 ## Wireframes
-![Rocky Mountain Map](https://user-images.githubusercontent.com/90070226/161394482-a9536561-3efc-47e4-affa-5762707d6939.jpg)
-![Rocky Mountain Map2](https://user-images.githubusercontent.com/90070226/161394494-b4e55853-f2e9-4d68-9946-7e6b45ae8f90.jpg)
-![Rocky Mountain Map3](https://user-images.githubusercontent.com/90070226/161394496-6cb0afda-1ac7-4079-82fd-a67f1ff67f54.jpg)
-![Rocky Mountain Map4](https://user-images.githubusercontent.com/90070226/161394498-b23f2a74-817f-4789-a7f9-8f9d99ee4946.jpg)
+![Rocky Mountain Map](https://github.com/Anran0716/musa-611-final/blob/main/wireframe-img/cover.png)
+
+![Rocky Mountain Map2](https://github.com/Anran0716/musa-611-final/blob/main/wireframe-img/introduction.png)
+
+![Rocky Mountain Map3](https://github.com/Anran0716/musa-611-final/blob/main/wireframe-img/landmark.png)
+
+![Rocky Mountain Map4](https://github.com/Anran0716/musa-611-final/blob/main/wireframe-img/path.png)
+
 ![Rocky Mountain Map5](https://user-images.githubusercontent.com/90070226/161394505-dc9bf71f-87f1-4bb3-be51-5f33ad084d85.jpg)
 ![Rocky Mountain Map6](https://user-images.githubusercontent.com/90070226/161394508-f9e4e8c3-6c72-4d2f-879d-82d04a084266.jpg)
 ![Rocky Mountain Map7](https://user-images.githubusercontent.com/90070226/161394513-2592b00a-2be8-45c0-9f5f-91e6d867e930.jpg)
