@@ -53,6 +53,17 @@ var layer = L.geoJSON(boundary, {
     style: myStyle
 }).addTo(map);
 
+var AirportIcon = L.icon({
+  iconUrl: './img/airport.png',
+  iconSize: [50, 60], // size of the icon
+  iconAnchor: [40, 40], // point of the icon which will correspond to marker's location
+  popupAnchor: [-30, -30], // point from which the popup should open relative to the iconAnchor
+});
+
+
+L.marker([39.853699850849196, -104.67237520082865], {icon: AirportIcon}).addTo(map);
+
+
 /*
   LISTENING FOR SCROLL ACTIVITY.
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
