@@ -29,9 +29,13 @@ All datasets we used are from [Rocky Mountain National Park Open Data](https://r
 |[Entrance Information](https://www.mycoloradoparks.com/park/faqs/rmnp-entrances)|4 Points|
 ## Wireframes
 ![Rocky Mountain Map](https://github.com/Anran0716/musa-611-final/blob/main/wireframe-img/cover.png)
+
 ![Rocky Mountain Map2](https://github.com/Anran0716/musa-611-final/blob/main/wireframe-img/introduction.png)
+
 ![Rocky Mountain Map3](https://github.com/Anran0716/musa-611-final/blob/main/wireframe-img/landmark.png)
+
 ![Rocky Mountain Map4](https://github.com/Anran0716/musa-611-final/blob/main/wireframe-img/path.png)
+
 ![Rocky Mountain Map5](https://user-images.githubusercontent.com/90070226/161394505-dc9bf71f-87f1-4bb3-be51-5f33ad084d85.jpg)
 ![Rocky Mountain Map6](https://user-images.githubusercontent.com/90070226/161394508-f9e4e8c3-6c72-4d2f-879d-82d04a084266.jpg)
 ![Rocky Mountain Map7](https://user-images.githubusercontent.com/90070226/161394513-2592b00a-2be8-45c0-9f5f-91e6d867e930.jpg)
