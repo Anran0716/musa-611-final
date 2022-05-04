@@ -28,7 +28,7 @@ All datasets we used are from [Rocky Mountain National Park Open Data](https://r
 |[Shuttle Stop](https://romo-nps.opendata.arcgis.com/datasets/rocky-mountain-national-park-shuttlestop-pt/explore?location=40.344708%2C-105.580136%2C13.75)|13 Points|
 |[Entrance Information](https://www.mycoloradoparks.com/park/faqs/rmnp-entrances)|4 Points|
 ## Wireframes
-![Rocky Mountain Map](https://user-images.githubusercontent.com/90070226/161394482-a9536561-3efc-47e4-affa-5762707d6939.jpg)
+![Rocky Mountain Map](https://github.com/Anran0716/musa-611-final/blob/main/wireframe-img/cover.png)
 ![Rocky Mountain Map2](https://user-images.githubusercontent.com/90070226/161394494-b4e55853-f2e9-4d68-9946-7e6b45ae8f90.jpg)
 ![Rocky Mountain Map3](https://user-images.githubusercontent.com/90070226/161394496-6cb0afda-1ac7-4079-82fd-a67f1ff67f54.jpg)
 ![Rocky Mountain Map4](https://user-images.githubusercontent.com/90070226/161394498-b23f2a74-817f-4789-a7f9-8f9d99ee4946.jpg)
