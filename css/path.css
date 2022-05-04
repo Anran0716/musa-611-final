@@ -33,7 +33,7 @@ body {
 .banner {
   position: fixed;
       width: 100%;
-      height: 15%;
+      height: 12%;
       left: 0px;
       top: 0px;
       background: rgba(247, 186, 236, 0.4);
@@ -53,7 +53,7 @@ body {
 
 
 .Go{
-  background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
+  background: linear-gradient(to left top, #e66465, #7c92cf 60%,#9198e5);
      border-style: none;
      color:#fff;
 
@@ -90,15 +90,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
 .button {
   border: none;
   position:relative;
@@ -124,41 +115,41 @@ body {
 
 
 #button1 {
-  background-color: #fc8eac; /* Green */
+  background-color: #db6e8c; /* Green */
   }
 
 #button2 {
-  background-color: #fc8eac; /* Green */
+  background-color: #db6e8c; /* Green */
 
   }
 #button3 {
-    background-color: #fc8eac; /* Green */
+    background-color: #db6e8c; /* Green */
 
     }
 #button4 {
-      background-color: #fc8eac; /* Green */
+      background-color: #db6e8c; /* Green */
       }
 #button5 {
-            background-color: #fc8eac; /* Green */
+            background-color: #db6e8c; /* Green */
             }
 #button6 {
-          background-color: #fc8eac; /* Green */
+          background-color: #db6e8c; /* Green */
                         }
 
 #button7 {
-          background-color: #fc8eac; /* Green */
+          background-color: #db6e8c; /* Green */
                         }
 
 #button8 {
-          background-color: #fc8eac; /* Green */
+          background-color: #db6e8c; /* Green */
                         }
 
 #button10 {
-          background-color: #fc8eac; /* Green */
+          background-color: #db6e8c; /* Green */
                         }
 
 #button11 {
-            background-color: #fc8eac; /* Green */
+            background-color: #db6e8c; /* Green */
                         }
 
 
