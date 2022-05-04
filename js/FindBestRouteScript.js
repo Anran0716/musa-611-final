@@ -1,6 +1,6 @@
 var geojsonLineOptions = {
-  weight: 5,
-  color: "#2a0078",
+  weight: 8,
+  color: "#732e9e",
   fillOpacity: 0
 };
 
