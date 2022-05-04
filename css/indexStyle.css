@@ -129,10 +129,11 @@ body {
 .container>h1{
   color: #ffffff;
   font-family: 'Raleway',sans-serif;
-  font-size: 52px;
+  font-size: 65px;
   font-weight: 75px;
   line-height: 63px;
   margin: 22px 40px 22px;
+  width:70%;
   text-align: left;
   /* text-transform: uppercase; */
 }
