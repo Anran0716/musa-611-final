@@ -274,7 +274,7 @@ var highlightFeature = function(e){
 }
 
 var resetHighlight = function(e){
-  featureGroup.resetStyle(e.target)
+  layer1.resetStyle(e.target)
 }
 
 function onEachFeature(feature, layer) {
