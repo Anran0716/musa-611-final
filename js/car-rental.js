@@ -23,4 +23,9 @@ const rental = [
 
   var layer = L.geoJSON(rental,{ pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: CarIcon});
-      } }).addTo(map);
+      } }).bindTooltip(layer => ` <b>Car Rental</b>
+     <br><b>Name</b>:  ${layer.feature.properties.Name}</br>`,
+    {permanent: false,
+      offset: [-50, -60],
+      direction: "right",
+  }).addTo(map);
