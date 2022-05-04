@@ -3,15 +3,6 @@ var propertiesUniqueList = [];
 var paraValue;
 
 
-var map = L.map('map', {
-  center: [40.343182, -105.688103],
-  zoom: 11
-});
-
-L.tileLayer('https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png', {
-	maxZoom: 18,
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
 
 let layerGroup = L.layerGroup().addTo(map);
 
@@ -42,8 +33,8 @@ handlePartyFilterChange = function(){
   {
     layerGroup.clearLayers();
     const geoJsonLayer = L.geoJSON(n, { pointToLayer: (p, latlng) => L.circleMarker(latlng, {
- color: '#f03',
- fillColor: '#f03',
+ color: '#212461',
+ fillColor: '#9da1fa',
  fillOpacity: 0.80
 }) })
     .bindTooltip(cml => cml.feature.properties.name)
@@ -53,8 +44,8 @@ handlePartyFilterChange = function(){
      .then(resp => resp.json())
      .then(poi_data => {
        const geoJsonLayer1 = L.geoJSON(poi_data, { pointToLayer: (p, latlng) => L.circleMarker(latlng, {
-    color: '#00e1ff',
-    fillColor: '#00e1ff',
+    color: '#701d06',
+    fillColor: '#fc8b35',
     fillOpacity: 0.80
 }) })
        .bindTooltip(l => l.feature.properties.name)

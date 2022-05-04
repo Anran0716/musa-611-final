@@ -1,25 +1,12 @@
-var map = L.map('map', {
-  center: [40.343182, -105.688103],
-  zoom: 11
-});
-
 var geojsonLineOptions = {
-  weight: 3,
-  color: "#fa7f88",
+  weight: 5,
+  color: "#2a0078",
   fillOpacity: 0
 };
 
 const partySelect = document.querySelector('#party-filter');
 const partySelect1 = document.querySelector('#party-filter1');
 
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoieGludGlhbiIsImEiOiJjazh1bGtkOXMwY2h4M25wYXh2d3J5NGpzIn0.6f78lOG9zSD3Iicqt6nXqQ', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 20,
-    id: 'mapbox/light-v10',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoieGludGlhbiIsImEiOiJjazh1bGtkOXMwY2h4M25wYXh2d3J5NGpzIn0.6f78lOG9zSD3Iicqt6nXqQ'
-}).addTo(map);
 
 let layerGroup = L.layerGroup().addTo(map);
 
