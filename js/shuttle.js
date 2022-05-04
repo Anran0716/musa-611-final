@@ -24,9 +24,9 @@ const shuttle_route = [
 ]
 
 var geojsonMarkerOptions = {
-    radius: 6,
-    fillColor: "#f26178",
-    color: "#000",
+    radius: 9,
+    fillColor: "#6e84f0",
+    color: "#3f1675",
     weight: 0.5,
     opacity: 1,
     fillOpacity: 1
@@ -34,7 +34,7 @@ var geojsonMarkerOptions = {
 
 var geojsonLineOptions = {
   weight: 3,
-  color: "#fa7f88",
+  color: "#850f32",
   fillOpacity: 0
 };
 

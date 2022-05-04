@@ -497,11 +497,7 @@ select{
   content: "\01F4C5";
   padding-right: 0.5rem;
 }
-#button7 {
-  background-color: #faa770;
-  position: relative;
-  left:20%;
-  }
+
 
   .searchBox1{
   position: fixed;
@@ -561,7 +557,7 @@ select{
 
 .banner .button {
   position:relative;
-  right: 10px;
+  right: 5%;
   left: 50%;
   border: none;
   margin-right: 20px;
@@ -582,6 +578,9 @@ select{
   z-index: 400;
 }
 
+#button7 {
+  background-color: #fc8eac; /* Green */
+  }
 
 #button8 {
   background-color: #fc8eac; /* Green */
@@ -603,3 +602,31 @@ select{
 .button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+
+
+
+#button-find {
+  position:relative;
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  font-family: 'Raleway',sans-serif;
+  font-variant: normal;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 8px;
+  background: linear-gradient(to left top, #e66465,#9198e5);
+  margin-right: 20px;
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  z-index: 800;
+}
+
+#button-find:hover{  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.6),0 17px 50px 0 rgba(0,0,0,0.19);}

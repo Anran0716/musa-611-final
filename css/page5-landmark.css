@@ -65,42 +65,20 @@ a:visited {
   font-variant: normal;
   font-weight: bold;
   cursor: pointer;
+  font-size: 20px;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   border-radius: 8px;
-  background-color: #FF3C5F;
-  margin-right: 20px;
+  background-color:  #fc8eac;
+  margin-right: 40px;
   box-shadow: px 1px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+  border-radius: 8px;
 }
+
+
 
 .button:hover{color:#fff!important;background-color:#49006a!important}
 
-.button-next {
-  position:relative;
-  left: 60%;
-  top:28px;
-  border: none;
-  color: white;
-  padding: 8px 18px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px;
-  font-family: 'Raleway',sans-serif;
-  font-variant: normal;
-  font-weight: bold;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  border-radius: 8px;
-  background-color: #5d5ac7; /* Yellow */
-  margin-right: 20px;
-  box-shadow: px 1px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-}
-
-.button-next:hover{color:#fff!important;background-color:#c98b04!important}
 
 
 

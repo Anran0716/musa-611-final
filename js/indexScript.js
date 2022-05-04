@@ -51,3 +51,7 @@ $('#button11').click(function(e){
 $('#button12').click(function(e){
     window.location.href="./page5-landmark-y.html"
 })
+
+$('#button13').click(function(e){
+    window.location.href="./car-rental.html"
+})

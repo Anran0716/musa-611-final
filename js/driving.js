@@ -266,15 +266,15 @@ const parklots = [
 ]
 
 var geojsonLineOptions = {
-  weight: 3,
-  color: "#b25ef7",
-  fillOpacity: 0
+  weight: 4,
+  color: "#3f1675",
+  opacity: 0.7
 };
 
 var geojsonPolyOptions = {
-  weight: 7,
-  color: "#17e6df",
-  fillOpacity: 0
+  color: "#d93435",
+  weight: 15,
+  opacity: 0.7
 };
 
 L.geoJson(parkroads, { style: geojsonLineOptions}).bindTooltip(layer => `<b>Driving routes</b>
