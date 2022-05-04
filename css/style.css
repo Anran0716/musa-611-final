@@ -562,7 +562,7 @@ select{
 .banner .button {
   position:relative;
   right: 10px;
-  left: 66%;
+  left: 50%;
   border: none;
   margin-right: 20px;
   color: white;
@@ -590,6 +590,14 @@ select{
   #button10 {
     background-color: #fc8eac; /* Green */
     }
+
+    #button12 {
+      background-color: #fc8eac; /* Green */
+      }
+
+      #button11{
+        background-color: #fc8eac; /* Green */
+        }
 
 
 .button:hover {

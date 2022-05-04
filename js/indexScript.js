@@ -47,3 +47,7 @@ $('#button10').click(function(e){
 $('#button11').click(function(e){
     window.location.href="./page3-Entrance-z.html"
 })
+
+$('#button12').click(function(e){
+    window.location.href="./page5-landmark-y.html"
+})

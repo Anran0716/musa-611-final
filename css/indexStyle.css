@@ -209,7 +209,17 @@ body {
             background-color: #fc8eac; /* Green */
                         }
 
+#button10 {
+            background-color: #fc8eac; /* Green */
+              }
 
+#button11 {
+            background-color: #fc8eac; /* Green */
+          }
+
+#button12 {
+            background-color: #fc8eac; /* Green */
+            }
 
 .button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
