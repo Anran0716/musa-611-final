@@ -1,6 +1,6 @@
 var map = L.map('map', {
   scrollWheelZoom: false,
-}).setView([40.22973623288899, -104.98497347891204], 10);
+}).setView([40.13214374369307, -104.98531697298073], 10);
 
 
 L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png', {
