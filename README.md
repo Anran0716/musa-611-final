@@ -8,8 +8,8 @@
 ## Introduction
 Rocky mountain national park is one more visited national park in the United States. With majestic peaks in every direction, wildlife and some most incredible outdoor adventures, it is no wonder more than three million people visit the park each year. Since there are so many spots to visit as well as activities to do there, it is necessary to develop a travel application to help visitors better plan their trips.  
 This travel map can be displayed through computer or phone based on users. It consists of two parts:
-- story map: this part includes the basic transportation situation around Rocky mountain and a brief introduction of some famous landmarks.
-- tourism application: in this part you can filter out your favourite activities based on your current location. 
+- story map: this part includes a brief introduction about the Rocky Mountain National Park, some favorite landmark in the park and also the route from Denver International Airport to four different entrances of the park.
+- tourism application: this part includes service in the park like camping site, pinic location, hiking path, etc. 
 ## Data Sources
 All datasets we used are from [Rocky Mountain National Park Open Data](https://romo-nps.opendata.arcgis.com/)
 
