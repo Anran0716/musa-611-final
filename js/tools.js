@@ -1,3 +1,4 @@
+/*eslint-env es6*/
 /* ====================
 The following two functions take a string of HTML and create DOM element objects
 representing the tags, using the `template` feature of HTML. See the following
