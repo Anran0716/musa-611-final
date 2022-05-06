@@ -4,8 +4,8 @@ var geojsonLineOptions = {
   fillOpacity: 0
 };
 
-const partySelect = document.querySelector('#party-filter');
-const partySelect1 = document.querySelector('#party-filter1');
+var partySelect = document.querySelector('#party-filter');
+var partySelect1 = document.querySelector('#party-filter1');
 
 
 let layerGroup = L.layerGroup().addTo(map);

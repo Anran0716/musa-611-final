@@ -33,7 +33,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-var myStyle = {
+let myStyle = {
   color: "#4d004b",
   fillColor: "#fad7de",
   weight: 3,
@@ -42,6 +42,6 @@ var myStyle = {
   dashArray: '4'
 };
 
-var layer = L.geoJSON(boundary, {
+let layer = L.geoJSON(boundary, {
   style: myStyle
 }).addTo(map);

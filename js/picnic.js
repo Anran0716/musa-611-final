@@ -1,3 +1,4 @@
+/*eslint-env es6*/
 const picnic = [
   {
     "type": "Feature",

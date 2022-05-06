@@ -1,10 +1,9 @@
-
-
+/*eslint-env es6*/
 const campsites = [
   {
     "type": "Feature",
     "properties": {
-      "OBJECTID": 1, "Campsite": "Arch Rocks", "FMSS": "89126", "DISTRICT": "THOMPSON RIVER", "EditDate": "2016\/02\/08 00:00:00", "GroupSite": "No", "EditBy": "ROMO GIS", "NAD83_UTM_Easting": 444472.85329, "NAD83_UTM_Northing": 4466812.9412099998, "WGS84_LON_DD": -105.65386647599996, "WGS84_LAT_DD": 40.350031949000027, "WGS84_LAT_DDM": "40 21.00192N", "WGS84_LON_DDM": "105 39.23199W", "WGS84_LAT_DMS": "40 21 00.11502N", "WGS84_LON_DMS": "105 39 13.91931W", "PUBLICDISPLAY": "Public Map Display", "DATAACCESS": "Unrestricted", "UNITCODE": "ROMO", "UNITNAME": "Rocky Mountain National Park", "REGIONCODE": "IMR", "CREATEDATE": "2016\/02\/08 00:00:00", "CREATEUSER": "Geoff Clark", "EDITUSER": "Geoff Clark", "MAPMETHOD": "GNSS", "MAPSOURCE": "Wilderness Office", "SOURCEDATE": null, "XYACCURACY": null, "GEOMETRYID": null, "NOTES": null, "GlobalID": "{706C905A-9267-44F6-B218-A58C562DB348}"
+      "OBJECTID": 1, "Campsite": "Arch Rocks", "FMSS": "89126", "DISTRICT": "THOMPSON RIVER", "EditDate": "2016\02\08 00:00:00", "GroupSite": "No", "EditBy": "ROMO GIS", "NAD83_UTM_Easting": 444472.85329, "NAD83_UTM_Northing": 4466812.9412099998, "WGS84_LON_DD": -105.65386647599996, "WGS84_LAT_DD": 40.350031949000027, "WGS84_LAT_DDM": "40 21.00192N", "WGS84_LON_DDM": "105 39.23199W", "WGS84_LAT_DMS": "40 21 00.11502N", "WGS84_LON_DMS": "105 39 13.91931W", "PUBLICDISPLAY": "Public Map Display", "DATAACCESS": "Unrestricted", "UNITCODE": "ROMO", "UNITNAME": "Rocky Mountain National Park", "REGIONCODE": "IMR", "CREATEDATE": "2016\/02\/08 00:00:00", "CREATEUSER": "Geoff Clark", "EDITUSER": "Geoff Clark", "MAPMETHOD": "GNSS", "MAPSOURCE": "Wilderness Office", "SOURCEDATE": null, "XYACCURACY": null, "GEOMETRYID": null, "NOTES": null, "GlobalID": "{706C905A-9267-44F6-B218-A58C562DB348}"
     },
     "geometry": { "type": "Point", "coordinates": [-105.65386657, 40.35003191800007, 0.0] }
   },
@@ -1620,7 +1619,7 @@ function getColor(d) {
                 : '#FFEDA0';
 }
 
-var geojsonMarkerOptions = {
+let geojsonMarkerOptions = {
   radius: 6,
   fillColor: "#fafc83",
   color: "#000",
@@ -1629,7 +1628,7 @@ var geojsonMarkerOptions = {
   fillOpacity: 1
 };
 
-var geojsonPolyOptions = {
+let geojsonPolyOptions = {
   weight: 3,
   fillColor: "#e63e5a",
   color: "#ffe3e8",
@@ -1637,7 +1636,7 @@ var geojsonPolyOptions = {
 };
 
 // highlight function
-var highlightFeature = function (e) {
+let highlightFeature = function (e) {
   var layer = e.target;
   layer.setStyle({
     weight: 5,
@@ -1647,7 +1646,7 @@ var highlightFeature = function (e) {
   });
 };
 
-var resetHighlight = function (e) {
+let resetHighlight = function (e) {
   layer1.resetStyle(e.target);
 };
 

@@ -1,3 +1,4 @@
+/*eslint-env es6*/
 const shuttle_stops = [
   {
     "type": "Feature",

@@ -32,7 +32,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-var myStyle = {
+let myStyle = {
   color: "#4d004b",
   fillColor: "#fad7de",
   weight: 3,

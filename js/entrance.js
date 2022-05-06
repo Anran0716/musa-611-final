@@ -1,3 +1,4 @@
+/*eslint-env es6*/
 const entrance = [{
   "type": "FeatureCollection",
   "name": "Entrance",

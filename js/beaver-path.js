@@ -52,7 +52,7 @@ let boundary = {
 };
 
 
-var myStyle = {
+let myStyle = {
   color: "#2f3e66",
   fillColor: "#6d7ba1",
   weight: 2,
@@ -61,7 +61,7 @@ var myStyle = {
   dashArray: '4'
 };
 
-var layer = L.geoJSON(boundary, {
+let layer = L.geoJSON(boundary, {
   style: myStyle
 }).addTo(map);
 
@@ -98,7 +98,7 @@ let updatePathOutlines = function () {
 
 
 
-var AirportIcon = L.icon({
+let AirportIcon = L.icon({
   iconUrl: './img/airport.png',
   iconSize: [50, 60], // size of the icon
   iconAnchor: [40, 40], // point of the icon which will correspond to marker's location

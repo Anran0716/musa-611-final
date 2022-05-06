@@ -1,3 +1,4 @@
+/*eslint-env es6*/
 const landmarks = [
   {
     "type": "FeatureCollection",

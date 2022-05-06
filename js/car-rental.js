@@ -1,3 +1,4 @@
+/*eslint-env es6*/
 const rental = [
   { "type": "Feature", "properties": { "Name": "Enterprise Rent-A-Car", "description": null }, "geometry": { "type": "Point", "coordinates": [-104.9817333, 39.8841929] } },
   { "type": "Feature", "properties": { "Name": "Enterprise Rent-A-Car", "description": null }, "geometry": { "type": "Point", "coordinates": [-105.0612252, 40.4076419] } },

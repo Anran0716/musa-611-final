@@ -1,3 +1,4 @@
+/*eslint-env es6*/
 const eating = [
   {
     "type": "Feature",
